@@ -5,6 +5,8 @@ const tabBlockImages = document.querySelectorAll('.design-block__img');
 const tabTitles = document.querySelectorAll('.design__title');
 const titleSite = document.querySelector('title');
 
+titleSite.textContent = tabTitles[0].textContent;
+
 const changeContent = (array, value) => { // ф-я замены контента по кнопке
     array.forEach((elem) => { 
         if (elem.dataset.tabsField === value) {

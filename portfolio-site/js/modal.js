@@ -5,7 +5,7 @@ const closeButton = modal.querySelector('.modal__close');
 
 modalButtons.forEach((btn) => {
     btn.addEventListener('click', () => { // открытие модального окна
-        modal.classList.remove('hidden');
+        modal.classList.toggle('hidden');
     });
 });
 
