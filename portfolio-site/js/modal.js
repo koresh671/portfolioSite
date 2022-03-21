@@ -10,9 +10,9 @@ modalButtons.forEach((btn) => {
 });
 
 overlay.addEventListener('click', () => {
-    modal.classList.add('hidden');
+    modal.classList.toggle('hidden');
 });
 
 closeButton.addEventListener('click', () => {
-    modal.classList.add('hidden');
+    modal.classList.toggle('hidden');
 });

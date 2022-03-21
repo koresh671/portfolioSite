@@ -18,7 +18,7 @@ const updateClock = () => { // текущее время
     const fMinutes = minutes < 10 ? "0" + minutes : minutes;
     const fSeconds = seconds < 10 ? "0" + seconds : seconds;
 
-    timerBlock.textContent = `${days}:${fHours}:${fMinutes}:${fSeconds}`; 
+    timerBlock.textContent = `${fdays}д:${fHours}ч:${fMinutes}:${fSeconds}`; 
 
     if (timeRemaining <= 0) {
         clearInterval(interval); // чистим таймер
